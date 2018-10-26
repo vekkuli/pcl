@@ -43,7 +43,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(MomentInvariantsEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA))((pcl::MomentInvariants)))
+  PCL_INSTANTIATE_PRODUCT(MomentInvariantsEstimation, ((pcl::PointXYZ))((pcl::MomentInvariants)))
 #else
   PCL_INSTANTIATE_PRODUCT(MomentInvariantsEstimation, (PCL_XYZ_POINT_TYPES)((pcl::MomentInvariants)))
 #endif

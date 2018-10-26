@@ -43,7 +43,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(MultiscaleFeaturePersistence, ((pcl::PointXYZ)(pcl::PointXYZRGBA))((pcl::FPFHSignature33)))
+  PCL_INSTANTIATE_PRODUCT(MultiscaleFeaturePersistence, ((pcl::PointXYZ))((pcl::FPFHSignature33)))
 #else
   PCL_INSTANTIATE_PRODUCT(MultiscaleFeaturePersistence, (PCL_XYZ_POINT_TYPES)(PCL_FEATURE_POINT_TYPES))
 #endif

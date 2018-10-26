@@ -43,7 +43,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(PrincipalCurvaturesEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA))((pcl::Normal))((pcl::PrincipalCurvatures)))
+  PCL_INSTANTIATE_PRODUCT(PrincipalCurvaturesEstimation, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::Normal)(pcl::PointNormal))((pcl::PrincipalCurvatures)))
 #else
   PCL_INSTANTIATE_PRODUCT(PrincipalCurvaturesEstimation, (PCL_XYZ_POINT_TYPES)(PCL_NORMAL_POINT_TYPES)((pcl::PrincipalCurvatures)))
 #endif

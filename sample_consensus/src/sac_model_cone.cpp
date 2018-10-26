@@ -43,7 +43,7 @@
 #include <pcl/point_types.h>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(SampleConsensusModelCone, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA)(pcl::PointXYZRGB))((pcl::Normal)))
+  PCL_INSTANTIATE_PRODUCT(SampleConsensusModelCone, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::Normal)(pcl::PointNormal)))
 #else
  PCL_INSTANTIATE_PRODUCT(SampleConsensusModelCone, (PCL_XYZ_POINT_TYPES)(PCL_NORMAL_POINT_TYPES))
 #endif

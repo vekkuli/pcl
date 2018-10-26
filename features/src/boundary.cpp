@@ -43,7 +43,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(BoundaryEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA)(pcl::PointXYZRGBNormal)(pcl::PointNormal))((pcl::PointXYZRGBNormal)(pcl::Normal)(pcl::PointNormal))((pcl::Boundary)))
+  PCL_INSTANTIATE_PRODUCT(BoundaryEstimation, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::Normal)(pcl::PointNormal))((pcl::Boundary)))
 #else
   PCL_INSTANTIATE_PRODUCT(BoundaryEstimation, (PCL_XYZ_POINT_TYPES)(PCL_NORMAL_POINT_TYPES)((pcl::Boundary)))
 #endif

@@ -43,7 +43,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(RSDEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA))((pcl::Normal))((pcl::PrincipalRadiiRSD)))
+  PCL_INSTANTIATE_PRODUCT(RSDEstimation, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::Normal)(pcl::PointNormal))((pcl::PrincipalRadiiRSD)))
 #else
   PCL_INSTANTIATE_PRODUCT(RSDEstimation, (PCL_XYZ_POINT_TYPES)(PCL_NORMAL_POINT_TYPES)((pcl::PrincipalRadiiRSD)))
 #endif

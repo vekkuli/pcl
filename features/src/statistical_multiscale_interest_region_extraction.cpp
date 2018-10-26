@@ -43,7 +43,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(StatisticalMultiscaleInterestRegionExtraction, ((pcl::PointXYZ)))
+  PCL_INSTANTIATE_PRODUCT(StatisticalMultiscaleInterestRegionExtraction, ((pcl::PointXYZ)(pcl::PointNormal)))
 #else
   PCL_INSTANTIATE_PRODUCT(StatisticalMultiscaleInterestRegionExtraction, (PCL_XYZ_POINT_TYPES))
 #endif

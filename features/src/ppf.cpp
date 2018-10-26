@@ -67,10 +67,10 @@ pcl::computePPFPairFeature (const Eigen::Vector4f &p1, const Eigen::Vector4f &n1
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(PPFEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointNormal)(pcl::PointXYZRGBA))((pcl::PointNormal)(pcl::Normal))((pcl::PPFSignature)))
-  PCL_INSTANTIATE_PRODUCT(PPFRGBEstimation, ((pcl::PointXYZRGBA) (pcl::PointXYZRGBNormal))
-                        ((pcl::Normal) (pcl::PointNormal)  (pcl::PointXYZRGBNormal))
-                        ((pcl::PPFRGBSignature)))
+  PCL_INSTANTIATE_PRODUCT(PPFEstimation, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::PointNormal)(pcl::Normal))((pcl::PPFSignature)))
+  //PCL_INSTANTIATE_PRODUCT(PPFRGBEstimation, ((pcl::PointXYZRGBA) (pcl::PointXYZRGBNormal))
+  //                      ((pcl::Normal) (pcl::PointNormal)  (pcl::PointXYZRGBNormal))
+  //                      ((pcl::PPFRGBSignature)))
 #else
   PCL_INSTANTIATE_PRODUCT(PPFEstimation, (PCL_XYZ_POINT_TYPES)(PCL_NORMAL_POINT_TYPES)((pcl::PPFSignature)))
   PCL_INSTANTIATE_PRODUCT(PPFRGBRegionEstimation, ((pcl::PointXYZRGBA) (pcl::PointXYZRGBNormal))

@@ -137,8 +137,14 @@ pcl::PPFRegistration<PointSource, PointTarget>::computeTransformation (PointClou
                 model_point_index = v_it->second;
             // Calculate angle alpha = alpha_m - alpha_s
             float alpha = search_method_->alpha_m_[model_reference_index][model_point_index] - alpha_s;
-            unsigned int alpha_discretized = static_cast<unsigned int> (floor (alpha) + floor (M_PI / search_method_->getAngleDiscretizationStep ()));
-            accumulator_array[model_reference_index][alpha_discretized] ++;
+            //unsigned int alpha_discretized = static_cast<unsigned int> (floor (alpha) + floor (M_PI / search_method_->getAngleDiscretizationStep ()));
+
+			if (alpha < -M_PI)
+				alpha += (M_PI * 2.0);
+			if (alpha > M_PI)
+				alpha -= (M_PI * 2.0);
+			unsigned int alpha_discretized = static_cast<unsigned int>(floor((alpha + M_PI) / search_method_->getAngleDiscretizationStep()));
+			accumulator_array[model_reference_index][alpha_discretized] ++;
           }
         }
         else PCL_ERROR ("[pcl::PPFRegistration::computeTransformation] Computing pair feature vector between points %u and %u went wrong.\n", scene_reference_index, scene_point_index);

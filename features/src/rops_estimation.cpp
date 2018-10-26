@@ -45,7 +45,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(ROPSEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA)(pcl::PointNormal))((pcl::Histogram<135>)))
+  PCL_INSTANTIATE_PRODUCT(ROPSEstimation, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::Histogram<135>)))
 #else
   PCL_INSTANTIATE_PRODUCT(ROPSEstimation, (PCL_XYZ_POINT_TYPES)((pcl::Histogram<135>)))
 #endif

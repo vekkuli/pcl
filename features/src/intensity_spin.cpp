@@ -43,9 +43,9 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE_PRODUCT(IntensitySpinEstimation, ((pcl::PointXYZI))((pcl::Histogram<20>)))
+  //PCL_INSTANTIATE_PRODUCT(IntensitySpinEstimation, ((pcl::PointXYZI))((pcl::Histogram<20>)))
 #else
-  PCL_INSTANTIATE_PRODUCT(IntensitySpinEstimation, ((pcl::PointXYZI)(pcl::PointXYZINormal))((pcl::Histogram<20>)))
+  //PCL_INSTANTIATE_PRODUCT(IntensitySpinEstimation, ((pcl::PointXYZI)(pcl::PointXYZINormal))((pcl::Histogram<20>)))
 #endif
 #endif    // PCL_NO_PRECOMPILE
 

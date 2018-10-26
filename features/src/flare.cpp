@@ -42,7 +42,7 @@
 #include <pcl/impl/instantiate.hpp>
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-PCL_INSTANTIATE_PRODUCT(FLARELocalReferenceFrameEstimation, ((pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGB)(pcl::PointXYZRGBA))((pcl::Normal))((pcl::ReferenceFrame))((float)))
+PCL_INSTANTIATE_PRODUCT(FLARELocalReferenceFrameEstimation, ((pcl::PointXYZ)(pcl::PointNormal))((pcl::Normal)(pcl::PointNormal))((pcl::ReferenceFrame))((float)))
 #else
 PCL_INSTANTIATE_PRODUCT(FLARELocalReferenceFrameEstimation, (PCL_XYZ_POINT_TYPES)(PCL_NORMAL_POINT_TYPES)((pcl::ReferenceFrame))((float)))
 #endif

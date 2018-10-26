@@ -41,7 +41,7 @@
 
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE(ConditionalEuclideanClustering, (pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGBA)(pcl::PointXYZRGB))
+  PCL_INSTANTIATE(ConditionalEuclideanClustering, (pcl::PointXYZ)(pcl::PointNormal))
 #else
   PCL_INSTANTIATE(ConditionalEuclideanClustering, PCL_XYZ_POINT_TYPES)
 #endif

@@ -40,7 +40,7 @@
 #include <pcl/impl/instantiate.hpp>
 #include <pcl/point_types.h>
 PCL_INSTANTIATE_PRODUCT(GoHV, ((pcl::PointXYZ))((pcl::PointXYZ)))
-PCL_INSTANTIATE_PRODUCT(GoHV, ((pcl::PointXYZRGB))((pcl::PointXYZRGB)))
-PCL_INSTANTIATE_PRODUCT(GoHV, ((pcl::PointXYZRGBA))((pcl::PointXYZRGBA)))
+//PCL_INSTANTIATE_PRODUCT(GoHV, ((pcl::PointXYZRGB))((pcl::PointXYZRGB)))
+//PCL_INSTANTIATE_PRODUCT(GoHV, ((pcl::PointXYZRGBA))((pcl::PointXYZRGBA)))
 #endif    // PCL_NO_PRECOMPILE
 

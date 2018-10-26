@@ -253,7 +253,7 @@ pcl::ProjectInliers<pcl::PCLPointCloud2>::initSACModel (int model_type)
 
 // Instantiations of specific point types
 #ifdef PCL_ONLY_CORE_POINT_TYPES
-  PCL_INSTANTIATE(ProjectInliers, (pcl::PointXYZ)(pcl::PointXYZI)(pcl::PointXYZRGB)(pcl::PointXYZRGBA))
+  PCL_INSTANTIATE(ProjectInliers, (pcl::PointXYZ)(pcl::PointNormal))
 #else
   PCL_INSTANTIATE(ProjectInliers, PCL_XYZ_POINT_TYPES)
 #endif
